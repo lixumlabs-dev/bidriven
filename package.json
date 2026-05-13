@@ -1,0 +1,13 @@
+{
+  "name": "bidriven-root",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start",
+    "lint": "npm --prefix frontend run lint",
+    "data:gen": "python data/simulated/generate_mock_data.py",
+    "data:ingest": "python connectors/api_to_s3.py && python warehouse/unified_loader.py",
+    "setup": "npm install --prefix frontend && pip install pandas fastparquet duckdb"
+  }
+}

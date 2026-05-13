@@ -1,0 +1,101 @@
+id_venda,data,produto,valor,vendedor,regiao
+V-0001,2026-04-26,Data Connector Lite,3642.06,Alice Silva,Norte
+V-0002,2026-05-09,Consultoria DataOps,4074.74,Alice Silva,Norte
+V-0003,2026-04-21,BI Dashboard Pro,2609.06,Bruno Santos,Centro-Oeste
+V-0004,2026-04-17,BI Dashboard Pro,1784.56,Diego Costa,Centro-Oeste
+V-0005,2026-05-02,AI Agent Setup,550.48,Alice Silva,Centro-Oeste
+V-0006,2026-04-22,Data Connector Lite,4404.46,Carla Oliveira,Sul
+V-0007,2026-04-18,AI Agent Setup,4389.09,Alice Silva,Oeste
+V-0008,2026-05-05,AI Agent Setup,2860.66,Bruno Santos,Centro-Oeste
+V-0009,2026-04-26,Consultoria DataOps,648.81,Carla Oliveira,Norte
+V-0010,2026-04-28,AI Agent Setup,3219.82,Alice Silva,Sul
+V-0011,2026-05-02,Data Connector Lite,1526.8,Diego Costa,Sul
+V-0012,2026-05-06,AI Agent Setup,640.31,Carla Oliveira,Sul
+V-0013,2026-04-11,BI Dashboard Pro,3993.22,Carla Oliveira,Sul
+V-0014,2026-05-10,BI Dashboard Pro,4053.0,Bruno Santos,Norte
+V-0015,2026-04-30,BI Dashboard Pro,786.75,Alice Silva,Oeste
+V-0016,2026-05-03,Consultoria DataOps,2039.25,Carla Oliveira,Sul
+V-0017,2026-05-05,Data Connector Lite,1775.37,Diego Costa,Leste
+V-0018,2026-04-16,BI Dashboard Pro,3284.42,Alice Silva,Oeste
+V-0019,2026-04-21,AI Agent Setup,3038.33,Carla Oliveira,Oeste
+V-0020,2026-04-11,Data Connector Lite,825.39,Bruno Santos,Sul
+V-0021,2026-04-25,AI Agent Setup,1299.16,Alice Silva,Norte
+V-0022,2026-04-25,Consultoria DataOps,3887.99,Bruno Santos,Centro-Oeste
+V-0023,2026-04-12,AI Agent Setup,1154.07,Diego Costa,Centro-Oeste
+V-0024,2026-05-05,BI Dashboard Pro,2431.28,Carla Oliveira,Oeste
+V-0025,2026-04-24,Consultoria DataOps,699.47,Bruno Santos,Leste
+V-0026,2026-04-28,BI Dashboard Pro,1285.16,Alice Silva,Norte
+V-0027,2026-05-09,Consultoria DataOps,746.94,Bruno Santos,Norte
+V-0028,2026-04-11,Consultoria DataOps,2591.63,Bruno Santos,Centro-Oeste
+V-0029,2026-04-29,BI Dashboard Pro,2188.18,Diego Costa,Centro-Oeste
+V-0030,2026-05-02,Data Connector Lite,4503.33,Alice Silva,Centro-Oeste
+V-0031,2026-04-25,BI Dashboard Pro,2451.44,Alice Silva,Norte
+V-0032,2026-04-21,Data Connector Lite,2742.08,Alice Silva,Sul
+V-0033,2026-04-18,BI Dashboard Pro,4510.13,Diego Costa,Norte
+V-0034,2026-04-11,Data Connector Lite,3872.85,Bruno Santos,Norte
+V-0035,2026-05-04,BI Dashboard Pro,4491.14,Carla Oliveira,Sul
+V-0036,2026-04-16,Consultoria DataOps,2958.52,Carla Oliveira,Centro-Oeste
+V-0037,2026-04-30,Consultoria DataOps,1684.71,Diego Costa,Sul
+V-0038,2026-04-29,BI Dashboard Pro,625.45,Alice Silva,Leste
+V-0039,2026-05-07,Data Connector Lite,580.22,Alice Silva,Norte
+V-0040,2026-04-13,Consultoria DataOps,511.05,Diego Costa,Leste
+V-0041,2026-04-17,Data Connector Lite,4670.48,Bruno Santos,Oeste
+V-0042,2026-04-16,Data Connector Lite,2423.74,Alice Silva,Leste
+V-0043,2026-05-05,Data Connector Lite,1407.34,Carla Oliveira,Centro-Oeste
+V-0044,2026-04-24,BI Dashboard Pro,832.49,Carla Oliveira,Leste
+V-0045,2026-04-12,AI Agent Setup,758.46,Bruno Santos,Oeste
+V-0046,2026-04-20,Data Connector Lite,1729.78,Carla Oliveira,Norte
+V-0047,2026-04-26,Consultoria DataOps,2396.61,Alice Silva,Norte
+V-0048,2026-04-12,BI Dashboard Pro,3028.86,Carla Oliveira,Leste
+V-0049,2026-04-14,AI Agent Setup,2145.2,Alice Silva,Norte
+V-0050,2026-04-20,BI Dashboard Pro,1749.4,Alice Silva,Norte
+V-0051,2026-04-26,AI Agent Setup,790.72,Alice Silva,Sul
+V-0052,2026-05-08,AI Agent Setup,1367.79,Diego Costa,Oeste
+V-0053,2026-04-21,Consultoria DataOps,4552.47,Diego Costa,Oeste
+V-0054,2026-05-05,Consultoria DataOps,3143.9,Bruno Santos,Leste
+V-0055,2026-04-12,Consultoria DataOps,2546.34,Carla Oliveira,Sul
+V-0056,2026-05-09,Data Connector Lite,3328.29,Alice Silva,Norte
+V-0057,2026-04-11,Consultoria DataOps,1054.83,Carla Oliveira,Sul
+V-0058,2026-04-21,Data Connector Lite,1894.54,Carla Oliveira,Leste
+V-0059,2026-05-02,AI Agent Setup,3286.24,Alice Silva,Sul
+V-0060,2026-04-19,BI Dashboard Pro,1472.35,Carla Oliveira,Sul
+V-0061,2026-04-30,BI Dashboard Pro,4910.01,Bruno Santos,Oeste
+V-0062,2026-05-06,BI Dashboard Pro,3438.12,Bruno Santos,Norte
+V-0063,2026-05-07,AI Agent Setup,1764.1,Diego Costa,Norte
+V-0064,2026-04-18,Consultoria DataOps,3077.08,Alice Silva,Oeste
+V-0065,2026-04-12,BI Dashboard Pro,2722.38,Carla Oliveira,Oeste
+V-0066,2026-04-23,Consultoria DataOps,1349.49,Alice Silva,Leste
+V-0067,2026-05-02,Data Connector Lite,3370.43,Bruno Santos,Sul
+V-0068,2026-04-16,Data Connector Lite,2013.8,Bruno Santos,Norte
+V-0069,2026-04-14,AI Agent Setup,2194.97,Alice Silva,Norte
+V-0070,2026-05-08,Consultoria DataOps,1213.92,Bruno Santos,Oeste
+V-0071,2026-04-21,AI Agent Setup,1057.01,Diego Costa,Centro-Oeste
+V-0072,2026-04-21,Data Connector Lite,3479.38,Alice Silva,Oeste
+V-0073,2026-05-10,BI Dashboard Pro,3592.16,Carla Oliveira,Norte
+V-0074,2026-04-16,Data Connector Lite,1391.51,Diego Costa,Oeste
+V-0075,2026-05-01,Consultoria DataOps,4703.45,Diego Costa,Sul
+V-0076,2026-04-21,AI Agent Setup,2585.75,Diego Costa,Centro-Oeste
+V-0077,2026-05-09,Data Connector Lite,1013.38,Diego Costa,Leste
+V-0078,2026-04-12,BI Dashboard Pro,3780.99,Carla Oliveira,Norte
+V-0079,2026-04-18,BI Dashboard Pro,4117.56,Bruno Santos,Norte
+V-0080,2026-04-27,Data Connector Lite,1079.58,Diego Costa,Centro-Oeste
+V-0081,2026-04-11,Consultoria DataOps,684.78,Bruno Santos,Oeste
+V-0082,2026-04-12,AI Agent Setup,539.22,Diego Costa,Centro-Oeste
+V-0083,2026-04-16,Consultoria DataOps,534.23,Bruno Santos,Norte
+V-0084,2026-04-15,BI Dashboard Pro,809.55,Carla Oliveira,Centro-Oeste
+V-0085,2026-04-29,BI Dashboard Pro,3278.19,Diego Costa,Norte
+V-0086,2026-04-30,AI Agent Setup,1307.19,Diego Costa,Norte
+V-0087,2026-04-24,Consultoria DataOps,3774.98,Diego Costa,Norte
+V-0088,2026-05-01,AI Agent Setup,3042.12,Carla Oliveira,Sul
+V-0089,2026-04-20,Data Connector Lite,4660.18,Diego Costa,Sul
+V-0090,2026-04-20,BI Dashboard Pro,1347.9,Diego Costa,Norte
+V-0091,2026-04-16,Consultoria DataOps,4992.58,Carla Oliveira,Leste
+V-0092,2026-05-06,BI Dashboard Pro,794.53,Bruno Santos,Norte
+V-0093,2026-04-24,Data Connector Lite,3254.19,Carla Oliveira,Sul
+V-0094,2026-05-10,Data Connector Lite,2601.43,Carla Oliveira,Leste
+V-0095,2026-04-11,Consultoria DataOps,638.02,Alice Silva,Centro-Oeste
+V-0096,2026-04-23,Data Connector Lite,3121.99,Bruno Santos,Sul
+V-0097,2026-05-06,BI Dashboard Pro,3557.18,Bruno Santos,Leste
+V-0098,2026-05-08,AI Agent Setup,4660.84,Bruno Santos,Sul
+V-0099,2026-04-15,Consultoria DataOps,3396.32,Carla Oliveira,Sul
+V-0100,2026-05-09,Consultoria DataOps,2523.06,Diego Costa,Sul

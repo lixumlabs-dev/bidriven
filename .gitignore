@@ -1,0 +1,19 @@
+frontend/.env.local
+frontend/.env*.local
+frontend/node_modules/
+.env
+*.env.local
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Dados binários / staging
+*.parquet
+*.db
+data/staging/
+
+# Warehouse local
+warehouse/*.db

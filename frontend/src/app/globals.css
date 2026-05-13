@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0A0C10;
+  --color-foreground: #F0F2F5;
+  --color-primary: #00A3FF;
+  --color-primary-glow: rgba(0, 163, 255, 0.3);
+  --color-surface: rgba(255, 255, 255, 0.03);
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Custom Utilities */
+@utility glass-panel {
+  background: var(--color-surface);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+@utility text-gradient {
+  background: linear-gradient(135deg, #FFF 0%, #00A3FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility glow-primary {
+  box-shadow: 0 0 20px var(--color-primary-glow);
+}
+
+:root {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+body {
+  font-family: var(--font-sans);
+}

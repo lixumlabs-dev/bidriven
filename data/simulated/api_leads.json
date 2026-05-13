@@ -1,0 +1,452 @@
+[
+  {
+    "lead_id": 1,
+    "name": "Lead Name 1",
+    "email": "lead1@example.com",
+    "source": "Organic",
+    "status": "qualified",
+    "created_at": "2026-04-30T17:59:05.379233",
+    "score": 20
+  },
+  {
+    "lead_id": 2,
+    "name": "Lead Name 2",
+    "email": "lead2@example.com",
+    "source": "LinkedIn",
+    "status": "qualified",
+    "created_at": "2026-05-06T17:59:05.379233",
+    "score": 12
+  },
+  {
+    "lead_id": 3,
+    "name": "Lead Name 3",
+    "email": "lead3@example.com",
+    "source": "LinkedIn",
+    "status": "new",
+    "created_at": "2026-04-28T17:59:05.379233",
+    "score": 4
+  },
+  {
+    "lead_id": 4,
+    "name": "Lead Name 4",
+    "email": "lead4@example.com",
+    "source": "LinkedIn",
+    "status": "new",
+    "created_at": "2026-05-11T17:59:05.379233",
+    "score": 80
+  },
+  {
+    "lead_id": 5,
+    "name": "Lead Name 5",
+    "email": "lead5@example.com",
+    "source": "LinkedIn",
+    "status": "new",
+    "created_at": "2026-05-10T17:59:05.379233",
+    "score": 71
+  },
+  {
+    "lead_id": 6,
+    "name": "Lead Name 6",
+    "email": "lead6@example.com",
+    "source": "LinkedIn",
+    "status": "new",
+    "created_at": "2026-05-07T17:59:05.379233",
+    "score": 90
+  },
+  {
+    "lead_id": 7,
+    "name": "Lead Name 7",
+    "email": "lead7@example.com",
+    "source": "LinkedIn",
+    "status": "qualified",
+    "created_at": "2026-05-06T17:59:05.379233",
+    "score": 19
+  },
+  {
+    "lead_id": 8,
+    "name": "Lead Name 8",
+    "email": "lead8@example.com",
+    "source": "Organic",
+    "status": "qualified",
+    "created_at": "2026-05-06T17:59:05.379233",
+    "score": 15
+  },
+  {
+    "lead_id": 9,
+    "name": "Lead Name 9",
+    "email": "lead9@example.com",
+    "source": "Google Ads",
+    "status": "contacted",
+    "created_at": "2026-05-03T17:59:05.379233",
+    "score": 31
+  },
+  {
+    "lead_id": 10,
+    "name": "Lead Name 10",
+    "email": "lead10@example.com",
+    "source": "Google Ads",
+    "status": "lost",
+    "created_at": "2026-04-30T17:59:05.379233",
+    "score": 13
+  },
+  {
+    "lead_id": 11,
+    "name": "Lead Name 11",
+    "email": "lead11@example.com",
+    "source": "LinkedIn",
+    "status": "lost",
+    "created_at": "2026-04-27T17:59:05.379233",
+    "score": 84
+  },
+  {
+    "lead_id": 12,
+    "name": "Lead Name 12",
+    "email": "lead12@example.com",
+    "source": "Google Ads",
+    "status": "new",
+    "created_at": "2026-04-27T17:59:05.379233",
+    "score": 48
+  },
+  {
+    "lead_id": 13,
+    "name": "Lead Name 13",
+    "email": "lead13@example.com",
+    "source": "Organic",
+    "status": "qualified",
+    "created_at": "2026-05-08T17:59:05.379233",
+    "score": 64
+  },
+  {
+    "lead_id": 14,
+    "name": "Lead Name 14",
+    "email": "lead14@example.com",
+    "source": "LinkedIn",
+    "status": "contacted",
+    "created_at": "2026-05-08T17:59:05.379233",
+    "score": 49
+  },
+  {
+    "lead_id": 15,
+    "name": "Lead Name 15",
+    "email": "lead15@example.com",
+    "source": "LinkedIn",
+    "status": "new",
+    "created_at": "2026-05-02T17:59:05.379233",
+    "score": 37
+  },
+  {
+    "lead_id": 16,
+    "name": "Lead Name 16",
+    "email": "lead16@example.com",
+    "source": "Referral",
+    "status": "closed",
+    "created_at": "2026-04-30T17:59:05.379233",
+    "score": 65
+  },
+  {
+    "lead_id": 17,
+    "name": "Lead Name 17",
+    "email": "lead17@example.com",
+    "source": "Google Ads",
+    "status": "new",
+    "created_at": "2026-05-06T17:59:05.379233",
+    "score": 82
+  },
+  {
+    "lead_id": 18,
+    "name": "Lead Name 18",
+    "email": "lead18@example.com",
+    "source": "Organic",
+    "status": "closed",
+    "created_at": "2026-05-02T17:59:05.379233",
+    "score": 43
+  },
+  {
+    "lead_id": 19,
+    "name": "Lead Name 19",
+    "email": "lead19@example.com",
+    "source": "Google Ads",
+    "status": "lost",
+    "created_at": "2026-05-07T17:59:05.379233",
+    "score": 93
+  },
+  {
+    "lead_id": 20,
+    "name": "Lead Name 20",
+    "email": "lead20@example.com",
+    "source": "Organic",
+    "status": "contacted",
+    "created_at": "2026-05-11T17:59:05.379233",
+    "score": 1
+  },
+  {
+    "lead_id": 21,
+    "name": "Lead Name 21",
+    "email": "lead21@example.com",
+    "source": "Google Ads",
+    "status": "lost",
+    "created_at": "2026-05-10T17:59:05.379233",
+    "score": 62
+  },
+  {
+    "lead_id": 22,
+    "name": "Lead Name 22",
+    "email": "lead22@example.com",
+    "source": "Referral",
+    "status": "new",
+    "created_at": "2026-04-26T17:59:05.379233",
+    "score": 98
+  },
+  {
+    "lead_id": 23,
+    "name": "Lead Name 23",
+    "email": "lead23@example.com",
+    "source": "Organic",
+    "status": "new",
+    "created_at": "2026-05-10T17:59:05.379233",
+    "score": 47
+  },
+  {
+    "lead_id": 24,
+    "name": "Lead Name 24",
+    "email": "lead24@example.com",
+    "source": "Google Ads",
+    "status": "qualified",
+    "created_at": "2026-05-04T17:59:05.379233",
+    "score": 48
+  },
+  {
+    "lead_id": 25,
+    "name": "Lead Name 25",
+    "email": "lead25@example.com",
+    "source": "LinkedIn",
+    "status": "qualified",
+    "created_at": "2026-05-04T17:59:05.379233",
+    "score": 52
+  },
+  {
+    "lead_id": 26,
+    "name": "Lead Name 26",
+    "email": "lead26@example.com",
+    "source": "LinkedIn",
+    "status": "closed",
+    "created_at": "2026-05-06T17:59:05.379233",
+    "score": 43
+  },
+  {
+    "lead_id": 27,
+    "name": "Lead Name 27",
+    "email": "lead27@example.com",
+    "source": "Google Ads",
+    "status": "contacted",
+    "created_at": "2026-04-30T17:59:05.379233",
+    "score": 81
+  },
+  {
+    "lead_id": 28,
+    "name": "Lead Name 28",
+    "email": "lead28@example.com",
+    "source": "Referral",
+    "status": "new",
+    "created_at": "2026-04-28T17:59:05.379233",
+    "score": 8
+  },
+  {
+    "lead_id": 29,
+    "name": "Lead Name 29",
+    "email": "lead29@example.com",
+    "source": "Organic",
+    "status": "lost",
+    "created_at": "2026-05-06T17:59:05.379233",
+    "score": 26
+  },
+  {
+    "lead_id": 30,
+    "name": "Lead Name 30",
+    "email": "lead30@example.com",
+    "source": "Google Ads",
+    "status": "contacted",
+    "created_at": "2026-05-10T17:59:05.379233",
+    "score": 86
+  },
+  {
+    "lead_id": 31,
+    "name": "Lead Name 31",
+    "email": "lead31@example.com",
+    "source": "Referral",
+    "status": "qualified",
+    "created_at": "2026-05-11T17:59:05.379233",
+    "score": 19
+  },
+  {
+    "lead_id": 32,
+    "name": "Lead Name 32",
+    "email": "lead32@example.com",
+    "source": "LinkedIn",
+    "status": "new",
+    "created_at": "2026-05-07T17:59:05.379233",
+    "score": 46
+  },
+  {
+    "lead_id": 33,
+    "name": "Lead Name 33",
+    "email": "lead33@example.com",
+    "source": "LinkedIn",
+    "status": "lost",
+    "created_at": "2026-04-29T17:59:05.379233",
+    "score": 85
+  },
+  {
+    "lead_id": 34,
+    "name": "Lead Name 34",
+    "email": "lead34@example.com",
+    "source": "Google Ads",
+    "status": "contacted",
+    "created_at": "2026-05-09T17:59:05.379233",
+    "score": 46
+  },
+  {
+    "lead_id": 35,
+    "name": "Lead Name 35",
+    "email": "lead35@example.com",
+    "source": "Referral",
+    "status": "lost",
+    "created_at": "2026-04-26T17:59:05.379233",
+    "score": 4
+  },
+  {
+    "lead_id": 36,
+    "name": "Lead Name 36",
+    "email": "lead36@example.com",
+    "source": "LinkedIn",
+    "status": "qualified",
+    "created_at": "2026-04-28T17:59:05.379233",
+    "score": 82
+  },
+  {
+    "lead_id": 37,
+    "name": "Lead Name 37",
+    "email": "lead37@example.com",
+    "source": "Referral",
+    "status": "new",
+    "created_at": "2026-04-26T17:59:05.379233",
+    "score": 51
+  },
+  {
+    "lead_id": 38,
+    "name": "Lead Name 38",
+    "email": "lead38@example.com",
+    "source": "LinkedIn",
+    "status": "lost",
+    "created_at": "2026-05-04T17:59:05.379233",
+    "score": 5
+  },
+  {
+    "lead_id": 39,
+    "name": "Lead Name 39",
+    "email": "lead39@example.com",
+    "source": "Google Ads",
+    "status": "new",
+    "created_at": "2026-05-08T17:59:05.379233",
+    "score": 71
+  },
+  {
+    "lead_id": 40,
+    "name": "Lead Name 40",
+    "email": "lead40@example.com",
+    "source": "Google Ads",
+    "status": "qualified",
+    "created_at": "2026-05-10T17:59:05.379233",
+    "score": 7
+  },
+  {
+    "lead_id": 41,
+    "name": "Lead Name 41",
+    "email": "lead41@example.com",
+    "source": "Organic",
+    "status": "contacted",
+    "created_at": "2026-04-26T17:59:05.379233",
+    "score": 17
+  },
+  {
+    "lead_id": 42,
+    "name": "Lead Name 42",
+    "email": "lead42@example.com",
+    "source": "Organic",
+    "status": "contacted",
+    "created_at": "2026-05-08T17:59:05.379233",
+    "score": 81
+  },
+  {
+    "lead_id": 43,
+    "name": "Lead Name 43",
+    "email": "lead43@example.com",
+    "source": "Organic",
+    "status": "closed",
+    "created_at": "2026-05-11T17:59:05.379233",
+    "score": 27
+  },
+  {
+    "lead_id": 44,
+    "name": "Lead Name 44",
+    "email": "lead44@example.com",
+    "source": "Referral",
+    "status": "closed",
+    "created_at": "2026-05-08T17:59:05.380272",
+    "score": 35
+  },
+  {
+    "lead_id": 45,
+    "name": "Lead Name 45",
+    "email": "lead45@example.com",
+    "source": "LinkedIn",
+    "status": "closed",
+    "created_at": "2026-05-01T17:59:05.380272",
+    "score": 3
+  },
+  {
+    "lead_id": 46,
+    "name": "Lead Name 46",
+    "email": "lead46@example.com",
+    "source": "Referral",
+    "status": "contacted",
+    "created_at": "2026-05-01T17:59:05.380272",
+    "score": 92
+  },
+  {
+    "lead_id": 47,
+    "name": "Lead Name 47",
+    "email": "lead47@example.com",
+    "source": "Referral",
+    "status": "closed",
+    "created_at": "2026-05-06T17:59:05.380272",
+    "score": 49
+  },
+  {
+    "lead_id": 48,
+    "name": "Lead Name 48",
+    "email": "lead48@example.com",
+    "source": "Referral",
+    "status": "qualified",
+    "created_at": "2026-05-06T17:59:05.380272",
+    "score": 93
+  },
+  {
+    "lead_id": 49,
+    "name": "Lead Name 49",
+    "email": "lead49@example.com",
+    "source": "Referral",
+    "status": "qualified",
+    "created_at": "2026-04-29T17:59:05.380272",
+    "score": 91
+  },
+  {
+    "lead_id": 50,
+    "name": "Lead Name 50",
+    "email": "lead50@example.com",
+    "source": "Referral",
+    "status": "closed",
+    "created_at": "2026-04-27T17:59:05.380272",
+    "score": 28
+  }
+]
