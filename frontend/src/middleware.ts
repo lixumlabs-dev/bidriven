@@ -14,7 +14,7 @@ const ROLE_PREFIXES: Record<RoleName, string> = {
   operador: '/app/operador',
 }
 
-export async function proxy(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(
