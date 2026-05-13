@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import {
   BarChart3, Database, GitBranch, Bot, Users, Settings,
-  Activity, ClipboardList, LogOut, ChevronRight, Terminal
+  Activity, ClipboardList, LogOut, ChevronRight, Terminal, FileText,
 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import type { RoleName } from '@/lib/supabase/types'
@@ -24,10 +24,11 @@ const NAV_BY_ROLE: Record<RoleName, NavItem[]> = {
     { label: 'Configurações', href: '/app/gestor/settings', icon: Settings },
   ],
   analista: [
-    { label: 'Workbench', href: '/app/analista/workbench',  icon: GitBranch },
-    { label: 'Catálogo',  href: '/app/analista/catalog',    icon: Database },
-    { label: 'Dashboards',href: '/app/analista/dashboards', icon: BarChart3 },
-    { label: 'Agentes IA',href: '/app/analista/agents',     icon: Bot },
+    { label: 'Workbench',   href: '/app/analista/workbench',  icon: GitBranch },
+    { label: 'Formulários', href: '/app/analista/forms',      icon: FileText  },
+    { label: 'Catálogo',    href: '/app/analista/catalog',    icon: Database  },
+    { label: 'Dashboards',  href: '/app/analista/dashboards', icon: BarChart3 },
+    { label: 'Agentes IA',  href: '/app/analista/agents',     icon: Bot       },
   ],
   operador: [
     { label: 'Monitor',      href: '/app/operador/monitor',      icon: Activity },
