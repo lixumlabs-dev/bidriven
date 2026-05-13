@@ -1,11 +1,12 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { cookies } from 'next/headers'
 import { revalidatePath } from 'next/cache'
 
-function getActiveCompanyId() {
-  return cookies().then(c => c.get('active_company_id')?.value ?? null)
+async function getActiveCompanyId() {
+  return (await cookies()).get('active_company_id')?.value ?? null
 }
 
 export async function getTeamMembers() {
@@ -20,8 +21,8 @@ export async function getTeamMembers() {
 
   if (error || !data) return { data: null, error: error?.message }
 
-  const userIds  = data.map(m => m.user_id)
-  const roleIds  = data.map(m => m.role_id)
+  const userIds = data.map(m => m.user_id)
+  const roleIds = data.map(m => m.role_id)
 
   const [{ data: profiles }, { data: roles }] = await Promise.all([
     supabase.from('profiles').select('id, full_name, avatar_url').in('id', userIds),
@@ -30,12 +31,12 @@ export async function getTeamMembers() {
 
   return {
     data: data.map(m => ({
-      memberId:   m.id,
-      userId:     m.user_id,
-      joinedAt:   m.joined_at,
-      fullName:   profiles?.find(p => p.id === m.user_id)?.full_name ?? null,
-      avatarUrl:  profiles?.find(p => p.id === m.user_id)?.avatar_url ?? null,
-      role:       roles?.find(r => r.id === m.role_id)?.name ?? null,
+      memberId:  m.id,
+      userId:    m.user_id,
+      joinedAt:  m.joined_at,
+      fullName:  profiles?.find(p => p.id === m.user_id)?.full_name ?? null,
+      avatarUrl: profiles?.find(p => p.id === m.user_id)?.avatar_url ?? null,
+      role:      roles?.find(r => r.id === m.role_id)?.name ?? null,
     })),
     error: null,
   }
@@ -44,24 +45,76 @@ export async function getTeamMembers() {
 export async function inviteMember(email: string, roleName: string) {
   const supabase = await createClient()
   const companyId = await getActiveCompanyId()
-  if (!companyId) return { error: 'Nenhuma empresa ativa' }
+  const { data: { user: caller } } = await supabase.auth.getUser()
+  if (!companyId || !caller) return { error: 'Não autenticado' }
 
-  // Busca usuário pelo email
-  const { data: users } = await supabase
-    .from('profiles')
+  // Verifica que o papel é válido
+  const { data: role } = await supabase
+    .from('roles')
     .select('id')
-    .eq('id',
-      supabase
-        .from('profiles')
-        .select('id')
-        .limit(1) as unknown as string
-    )
-    .limit(1)
+    .eq('name', roleName)
+    .single()
 
-  // Alternativa: buscar via auth.users (requer service role — feito via API route separada)
-  // Por ora retorna instrução para o usuário se cadastrar primeiro
-  void users
-  return { error: 'Use o SQL Editor para vincular o usuário manualmente até implementarmos o convite por email.' }
+  if (!role) return { error: 'Papel inválido' }
+
+  let targetUserId: string
+
+  try {
+    const admin = createAdminClient()
+
+    // Tenta convidar (cria novo usuário e envia email)
+    const { data: inviteData, error: inviteError } = await admin.auth.admin.inviteUserByEmail(
+      email,
+      {
+        data: { invited_to_company: companyId },
+        redirectTo: `${process.env.NEXT_PUBLIC_APP_URL}/auth/callback`,
+      }
+    )
+
+    if (!inviteError && inviteData?.user) {
+      targetUserId = inviteData.user.id
+    } else if (inviteError?.status === 422) {
+      // Usuário já cadastrado — busca pelo email na lista
+      const { data: { users } } = await admin.auth.admin.listUsers({ perPage: 1000 })
+      const found = users.find(u => u.email?.toLowerCase() === email.toLowerCase())
+      if (!found) return { error: 'Usuário não encontrado. Peça que o usuário se cadastre primeiro.' }
+      targetUserId = found.id
+    } else {
+      return { error: inviteError?.message ?? 'Erro ao convidar usuário' }
+    }
+  } catch {
+    return { error: 'SUPABASE_SERVICE_ROLE_KEY não configurado. Configure nas env vars para habilitar convites.' }
+  }
+
+  // Verifica se já é membro
+  const { data: existing } = await supabase
+    .from('company_members')
+    .select('id')
+    .eq('user_id', targetUserId)
+    .eq('company_id', companyId)
+    .single()
+
+  if (existing) return { error: 'Usuário já é membro desta empresa' }
+
+  // Adiciona ao company_members
+  const { error: memberError } = await supabase
+    .from('company_members')
+    .insert({ user_id: targetUserId, company_id: companyId, role_id: role.id })
+
+  if (memberError) return { error: memberError.message }
+
+  // Notifica o novo membro (se já tinha conta)
+  await supabase.from('notifications').insert({
+    company_id: companyId,
+    user_id:    targetUserId,
+    type:       'invite_received',
+    title:      'Você foi adicionado a uma empresa',
+    message:    `Você agora é membro com o papel de "${roleName}".`,
+    metadata:   { company_id: companyId, role: roleName, invited_by: caller.id },
+  })
+
+  revalidatePath('/app/gestor/team')
+  return { error: null }
 }
 
 export async function updateMemberRole(memberId: string, newRoleName: string) {

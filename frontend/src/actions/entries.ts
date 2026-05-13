@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { runRulesForEntry } from '@/lib/rules-engine'
 import { cookies } from 'next/headers'
 import { revalidatePath } from 'next/cache'
 
@@ -37,7 +38,6 @@ export async function submitEntry(templateId: string, values: Record<string, unk
   const { data: { user } } = await supabase.auth.getUser()
   if (!companyId || !user) return { data: null, error: 'Não autenticado' }
 
-  // Valida que o template existe e está ativo
   const { data: template } = await supabase
     .from('form_templates')
     .select('id, status')
@@ -60,6 +60,10 @@ export async function submitEntry(templateId: string, values: Record<string, unk
     .single()
 
   if (error) return { data: null, error: error.message }
+
+  // Avalia regras de negócio em background — não bloqueia o retorno
+  runRulesForEntry(supabase, companyId, templateId, data.id, values).catch(() => undefined)
+
   revalidatePath('/app/operador/lancamentos')
   return { data, error: null }
 }
