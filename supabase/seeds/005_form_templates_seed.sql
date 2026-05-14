@@ -6,8 +6,14 @@
 --   DataEngineerAgent (regras de qualidade de dados)
 --   CopywriterAgent (copy em PT-BR)
 --
+-- PRÉ-REQUISITO:
+--   Execute PRIMEIRO a migration 005_expand_field_types.sql no SQL Editor.
+--   Ela adiciona 'textarea' e 'email' ao CHECK constraint de form_fields.
+--   Depois execute este seed.
+--
 -- Como executar:
---   Cole no Supabase SQL Editor e execute.
+--   1. SQL Editor → cole migrations/005_expand_field_types.sql → Execute
+--   2. SQL Editor → cole este arquivo → Execute
 --   A empresa 'lixium' (slug) precisa existir previamente.
 --
 -- Formulários criados (10):
